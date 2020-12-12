@@ -4,7 +4,7 @@
 # verifying our 12 counting function.
 
 
-# code  to generate random string
+# function to generate random string
 import random
 def generate_string(N, alphabet='ACGT'):
     return ''.join([random.choice(alphabet) for i in range(N)])
@@ -14,8 +14,8 @@ my_dna = generate_string(87050)
 
 # Method--1.. List Iteration
 def count_v1(dna, base):
-    dna = list(dna) #convert string to list
-    i = 0               #counter
+    dna = list(dna) 
+    i = 0             
     for c in dna:
         if c == base:
             i += 1
